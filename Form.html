@@ -8,7 +8,6 @@
 	<title>課程資料表單</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,26 +22,26 @@
     <form action="processingscript.php" method="post">
         <label for="name">Your name</label>
         <br>
-        <input type="text" required id="name">
+        <input type="text" required id="name" autofocus>
         <br>
         <br>
         <lable for="gender">What is your gender?</label>
         <br>
-        <label><input type="radio" id="gender" name="gender" value="male">Male</label>
-        <label><input type="radio" id="gender" name="gender" value="female">Female</label>
+        <label><input type="radio" id="gender" name="gender" value="male" autofocus>Male</label>
+        <label><input type="radio" id="gender" name="gender" value="female" autofocus>Female</label>
         <br>
         <br>
         <label for="Birthday">Birthday</label>
         <br>
-        <input type="date" required id="Birthday">
+        <input type="date" required id="Birthday" autofocus>
         <br>
         <br>
         <lable for="transport">Which form of transport do you use?</label>
-            <p>Choose as many as you like</p>
-        <label><input type="checkbox"  id="transport">Walking</label>
-        <label><input type="checkbox"  id="transport">Bike</label>
-        <label><input type="checkbox"  id="transport">Mortorcycle</label>
-        <label><input type="checkbox"  id="transport">Car</label>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Choose as many as you like</p>
+        <label><input type="checkbox"  id="transport" >Walking</label>
+        <label><input type="checkbox"  id="transport" >Bike</label>
+        <label><input type="checkbox"  id="transport" >Mortorcycle</label>
+        <label><input type="checkbox"  id="transport" >Car</label>
         <br>
         <label><input type="checkbox"  id="transport">Bus</label>
         <label><input type="checkbox"  id="transport">Metro</label>
@@ -76,14 +75,14 @@
         <input type="text" required id="industry" list="work">
         <datalist id="work">
             <option value="Accounting">
-            <option value="Writing amp; Editing">
+            <option value="Writing &amp; Editing">
             <option value="Animation">
             <option value="Photography">
             <option value="Graphic Design">
             <option value="Photography">
             <option value="Computer Software">
             <option value="Computer Games">
-            <option value="Information Technology amp; Services">
+            <option value="Information Technology &amp; Services">
         </datalist>
         <br>
         <br>
