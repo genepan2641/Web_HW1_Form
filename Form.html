@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+<head>
+	<title>課程資料表單</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+    <form action="processingscript.php" method="post">
+        <label for="name">Your name</label>
+        <br>
+        <input type="text" required id="name">
+        <br>
+        <br>
+        <lable for="gender">What is your gender?</label>
+        <br>
+        <label><input type="radio" id="gender" name="gender" value="male">Male</label>
+        <label><input type="radio" id="gender" name="gender" value="female">Female</label>
+        <br>
+        <br>
+        <label for="Birthday">Birthday</label>
+        <br>
+        <input type="date" required id="Birthday">
+        <br>
+        <br>
+        <lable for="transport">Which form of transport do you use?</label>
+            <p>Choose as many as you like</p>
+        <label><input type="checkbox"  id="transport">Walking</label>
+        <label><input type="checkbox"  id="transport">Bike</label>
+        <label><input type="checkbox"  id="transport">Mortorcycle</label>
+        <label><input type="checkbox"  id="transport">Car</label>
+        <br>
+        <label><input type="checkbox"  id="transport">Bus</label>
+        <label><input type="checkbox"  id="transport">Metro</label>
+        <label><input type="checkbox"  id="transport">Train</label>
+        <label><input type="checkbox"  id="transport">Airplane</label>
+        <br>
+        <br>
+        <label>What is the highest level of education you have completed?</label>
+        <br>
+        <label><input type="radio"  name="education">Less than High School</label>
+        <br>
+        <label><input type="radio"  name="education">High School or equivalent</label>
+        <br>
+        <label><input type="radio"  name="education">Attended College / University</label>
+        <br>
+        <label><input type="radio"  name="education">Associate degree</label>
+        <br>
+        <label><input type="radio"  name="education">Bacgelor's degree</label>
+        <br>
+        <label><input type="radio"  name="education">Master's degree</label>
+        <br>
+        <label><input type="radio"  name="education">Professional degree</label>
+        <br>
+        <label><input type="radio"  name="education">Doctorate degree</label>
+        <br>
+        <label><input type="radio"  name="education">I prefer not to answer</label>
+        <br>
+        <br>
+        <label for="industry">Which industry do you work in or are most involved with?</label>
+        <br>
+        <input type="text" required id="industry" list="work">
+        <datalist id="work">
+            <option value="Accounting">
+            <option value="Writing & Editing">
+            <option value="Animation">
+            <option value="Photography">
+            <option value="Graphic Design">
+            <option value="Photography">
+            <option value="Computer Software">
+            <option value="Computer Games">
+            <option value="Information Technology & Services">
+        </datalist>
+        <br>
+        <br>
+        <label for="phone">Your phone#</label>
+        <br>
+        <input type="tel" id="phone" pattern="[0-9]{10}" >
+        <br>
+        <br>
+        <form role="form" novalidate>
+            <label for="email">Email address</label>
+            <br>
+            <input type="email" required id="email" placeholder="Enter email">
+        </form>
+        <br>
+        <br>
+        <label for="website">Personal website</label>
+        <br>
+        <input type="url" id="website" placeholder="Enter your website" >
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
