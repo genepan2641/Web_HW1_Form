@@ -22,58 +22,52 @@
 <body>
     <form action="processingscript.php" method="post">
         <div class="name">
-            <label for="name">1.Your name</label>
-            
+            <h1 for="name">1.Your name</h1>    
             <input type="text" required id="name" autofocus>
         </div>
         <div class="gender">
-            <label for="gender">2.What is your gender?</label>
-            
-            <label><input type="radio" id="gender" name="gender" value="male" autofocus>Male</label>
-            <label><input type="radio" id="gender" name="gender" value="female" autofocus>Female</label>
+            <h1>2.What is your gender?</h1>  
+            <input type="radio" id="gender1" name="gender" value="male" autofocus><label for="gender1">Male</label>
+            <input type="radio" id="gender2" name="gender" value="female" autofocus><label for="gender2">Female</label>
         </div>
         <div class="birthday">
-            <label for="Birthday">3.Birthday</label>
-            
+            <h1>3.Birthday</h1>
             <input type="date" required id="Birthday" autofocus>
         </div>
         <div class="transport">
-            <label for="transport">4.Which form of transport do you use?</label>
+            <h1 for="transport">4.Which form of transport do you use?</h1>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;Choose as many as you like</p>
-            <label><input type="checkbox"  id="transport" >Walking</label>
-            <label><input type="checkbox"  id="transport" >Bike</label>
-            <label><input type="checkbox"  id="transport" >Mortorcycle</label>
-            <label><input type="checkbox"  id="transport" >Car</label>
-            
-            <label><input type="checkbox"  id="transport">Bus</label>
-            <label><input type="checkbox"  id="transport">Metro</label>
-            <label><input type="checkbox"  id="transport">Train</label>
-            <label><input type="checkbox"  id="transport">Airplane</label>
+            <div class="first">
+                <label><input type="checkbox"  id="transport" >Walking</label>
+                <label><input type="checkbox"  id="transport" >Bike</label>
+                <label><input type="checkbox"  id="transport" >Mortorcycle</label>
+                <label><input type="checkbox"  id="transport" >Car</label>
+            </div>
+            <div class="second">
+                <label><input type="checkbox"  id="transport">Bus</label>
+                <label><input type="checkbox"  id="transport">Metro</label>
+                <label><input type="checkbox"  id="transport">Train</label>
+                <label><input type="checkbox"  id="transport">Airplane</label>
+            </div>
         </div>
         <div class="education">
-            <label>5.What is the highest level of education you have completed?</label>
-            
-            <label><input type="radio"  name="education">Less than High School</label>
-            
-            <label><input type="radio"  name="education">High School or equivalent</label>
-            
-            <label><input type="radio"  name="education">Attended College / University</label>
-            
-            <label><input type="radio"  name="education">Associate degree</label>
-            
-            <label><input type="radio"  name="education">Bacgelor's degree</label>
-            
-            <label><input type="radio"  name="education">Master's degree</label>
-            
-            <label><input type="radio"  name="education">Professional degree</label>
-            
-            <label><input type="radio"  name="education">Doctorate degree</label>
-            
-            <label><input type="radio"  name="education">I prefer not to answer</label>
+            <h1>5.What is the highest level of education you have completed?</h1>
+            <div class="education_one">
+                <label><input type="radio"  name="education">Less than High School</label>
+                <label><input type="radio"  name="education">High School or equivalent</label>
+                <label><input type="radio"  name="education">Attended College / University</label>
+                <label><input type="radio"  name="education">Associate degree</label>
+            </div>
+            <div class="education_two">
+                <label><input type="radio"  name="education">Bacgelor's degree</label>
+                <label><input type="radio"  name="education">Master's degree</label>
+                <label><input type="radio"  name="education">Professional degree</label>
+                <label><input type="radio"  name="education">Doctorate degree</label>
+                <label><input type="radio"  name="education">I prefer not to answer</label>
+            </div>    
         </div>
         <div class="industry">
-            <label for="industry">6.Which industry do you work in or are most involved with?</label>
-            
+            <h1>6.Which industry do you work in or are most involved with?</h1>            
             <input type="text" required id="industry" list="work">
             <datalist id="work">
                 <option value="Accounting">
@@ -88,25 +82,19 @@
             </datalist>
         </div>
         <div class="phone">
-            <label for="phone">7.Your phone#</label>
-            
-            <input type="tel" id="phone" pattern="[0-9]{10}" >
-            
+            <h1>7.Your phone#</h1>           
+            <input type="tel" id="phone" pattern="[0-9]{10}" >           
         </div>
         <div class="email">
-
-                <label for="email">8.Email address</label>
-                
-                <input type="email" required id="email" placeholder="Enter email">
-
+            <h1>8.Email address</h1>
+            <input type="email" required id="email" placeholder="Enter email">
         </div>
         <div class="website">
-            <label for="website">9.Personal website</label>
-            
+            <h1>9.Personal website</h1>   
             <input type="url" id="website" placeholder="Enter your website" >
         </div>  
         <div class="submit">  
-            <input type="submit" value="Submit">
+            <input type="submit" id="submit" value="Submit">
         </div>
     </form>
 </body>
