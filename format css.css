@@ -33,7 +33,7 @@ h1 {
 
 input#gender1,
 input#gender2 {
-	display:inline-block;
+/*	display:inline-block;*/
 	margin-left: 100px;
 }
 
