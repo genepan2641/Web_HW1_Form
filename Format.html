@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> 
-<html class="no-js"> <!--<![endif]-->
+<html lang="en"> <!--<![endif]-->
 <head>
 	<title>課程資料表單</title>
     <meta charset="utf-8">
@@ -15,26 +15,32 @@
     <link rel="stylesheet" type="text/css" href="format css.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Slabo+27px&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 
-<body>
+<body class="container">
     <form action="processingscript.php" method="post">
-        <div class="name">
+        <div class="row">
+        <div class="name form-group col-xs-12 col-sm-12 col-md-6">
             <h1 for="name">1.Your name</h1>    
-            <input type="text" required id="name" autofocus>
-        </div>
-        <div class="gender">
+            <input type="text" required id="name" placeholder="Enter your name" class="form-control" autofocus>
+        </div>        
+        <div class="gender form-group col-xs-12 col-sm-12 col-md-6">
             <h1>2.What is your gender?</h1>  
             <input type="radio" id="gender1" name="gender" value="male" autofocus><label for="gender1">Male</label>
             <input type="radio" id="gender2" name="gender" value="female" autofocus><label for="gender2">Female</label>
         </div>
-        <div class="birthday">
-            <h1>3.Birthday</h1>
-            <input type="date" required id="Birthday" autofocus>
         </div>
-        <div class="transport">
+        <div class="row">
+        <div class="birthday form-group col-xs-12 col-sm-12 col-md-12">
+            <h1>3.Birthday</h1>
+            <input type="date" required id="Birthday" class="form-control" autofocus>
+        </div>
+        </div>
+        <div class="row">
+        <div class="transport form-group col-xs-12 col-sm-12 col-md-12">
             <h1 for="transport">4.Which form of transport do you use?</h1>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;Choose as many as you like</p>
             <div class="first">
@@ -50,7 +56,9 @@
                 <label><input type="checkbox"  id="transport">Airplane</label>
             </div>
         </div>
-        <div class="education">
+        </div>
+        <div class="row">
+        <div class="education form-group col-xs-12 col-sm-12 col-md-12">
             <h1>5.What is the highest level of education you have completed?</h1>
             <div class="education_one">
                 <label><input type="radio"  name="education">Less than High School</label>
@@ -66,9 +74,11 @@
                 <label><input type="radio"  name="education">I prefer not to answer</label>
             </div>    
         </div>
-        <div class="industry">
+        </div>
+        <div class="row">
+        <div class="industry form-group col-xs-12 col-sm-12 col-md-12">
             <h1>6.Which industry do you work in or are most involved with?</h1>            
-            <input type="text" required id="industry" list="work">
+            <input type="text" required id="industry" class="form-control" list="work">
             <datalist id="work">
                 <option value="Accounting">
                 <option value="Writing &amp; Editing">
@@ -81,21 +91,24 @@
                 <option value="Information Technology &amp; Services">
             </datalist>
         </div>
-        <div class="phone">
+        </div>
+        <div class="row">
+        <div class="phone form-group col-xs-12 col-sm-12 col-md-4">
             <h1>7.Your phone#</h1>           
-            <input type="tel" id="phone" pattern="[0-9]{10}" >           
+            <input type="tel" id="phone" class="form-control" pattern="[0-9]{10}" >           
         </div>
-        <div class="email">
+        <div class="email form-group col-xs-12 col-sm-12 col-md-4">
             <h1>8.Email address</h1>
-            <input type="email" required id="email" placeholder="Enter email">
+            <input type="email" required id="email" class="form-control" placeholder="Enter email">
         </div>
-        <div class="website">
+        <div class="website form-group col-xs-12 col-sm-12 col-md-4">
             <h1>9.Personal website</h1>   
-            <input type="url" id="website" placeholder="Enter your website" >
+            <input type="url" id="website" class="form-control" placeholder="Enter your website" >
         </div>  
-        <div class="submit">  
-            <input type="submit" id="submit" value="Submit">
         </div>
+            <div class="submit btn-lg">  
+            <button class="btn btn-primary" type="submit" id="submit" >Submit</button>
+            </div>
     </form>
 </body>
 
